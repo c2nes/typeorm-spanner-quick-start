@@ -4,9 +4,9 @@ import { User } from "./entity/User"
 
 export const AppDataSource = new DataSource({
     type: "spanner",
-    projectId: "test",
-    instanceId: "test",
-    databaseId: "test",
+    projectId: "my-project-id",
+    instanceId: "my-instance-id",
+    databaseId: "my-database-id",
     synchronize: true,
     logging: false,
     entities: [User],

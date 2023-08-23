@@ -5,6 +5,8 @@ AppDataSource.initialize().then(async () => {
 
     console.log("Inserting a new user into the database...")
     const user = new User()
+    // TODO: Generate real user ID
+    user.id = Math.floor(Math.random() * 100000)
     user.firstName = "Timber"
     user.lastName = "Saw"
     user.age = 25
